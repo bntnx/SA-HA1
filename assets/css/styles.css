@@ -18,6 +18,108 @@
   --font-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+
+/* CSS - Section Hero - JUAN MANUEL BENITEZ QUIROZ - LINEA 22 A LA 121 */
+.hero {
+  background-color: #5F3C62;
+}
+
+.hero p {
+color: #FEFBEB
+}
+
+.hero__visual {
+  border-color: #FEFBEB;
+  border-width: 2px;
+}
+
+/* Hero */
+.hero {
+  padding: 4.5rem 0 4rem;
+}
+
+.hero__content {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero__text h1 {
+  font-size: clamp(2.1rem, 4vw, 2.75rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  color: var(--color-muted);
+  font-size: 1rem;
+  max-width: 34rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero__note {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  max-width: 32rem;
+}
+
+/* Hero visual card */
+.hero__visual {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-card {
+  background: radial-gradient(circle at top left, rgba(236, 72, 153, 0.12), rgba(15, 23, 42, 0.98));
+  border-radius: 1.7rem;
+  padding: 1.75rem 1.6rem;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow: var(--shadow-soft);
+  max-width: 23rem;
+}
+
+.hero-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-card p {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+  margin-bottom: 1rem;
+}
+
+.hero-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.hero-card__list li + li {
+  margin-top: 0.35rem;
+}
+
+.hero-card__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
 /* Reset básico */
 *,
 *::before,
@@ -200,42 +302,7 @@ body {
   transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
 
-/* Hero */
-.hero {
-  padding: 4.5rem 0 4rem;
-}
 
-.hero__content {
-  display: grid;
-  gap: 3rem;
-  align-items: center;
-}
-
-.hero__text h1 {
-  font-size: clamp(2.1rem, 4vw, 2.75rem);
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.hero__subtitle {
-  color: var(--color-muted);
-  font-size: 1rem;
-  max-width: 34rem;
-  margin-bottom: 1.5rem;
-}
-
-.hero__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.hero__note {
-  font-size: 0.85rem;
-  color: #9ca3af;
-  max-width: 32rem;
-}
 
 /* Botones */
 .btn {
@@ -280,55 +347,7 @@ body {
   width: 100%;
 }
 
-/* Hero visual card */
-.hero__visual {
-  display: flex;
-  justify-content: flex-end;
-}
 
-.hero-card {
-  background: radial-gradient(circle at top left, rgba(236, 72, 153, 0.12), rgba(15, 23, 42, 0.98));
-  border-radius: 1.7rem;
-  padding: 1.75rem 1.6rem;
-  border: 1px solid rgba(148, 163, 184, 0.5);
-  box-shadow: var(--shadow-soft);
-  max-width: 23rem;
-}
-
-.hero-card h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.75rem;
-}
-
-.hero-card p {
-  font-size: 0.95rem;
-  color: #e5e7eb;
-  margin-bottom: 1rem;
-}
-
-.hero-card__list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.2rem;
-  font-size: 0.9rem;
-  color: #e5e7eb;
-}
-
-.hero-card__list li + li {
-  margin-top: 0.35rem;
-}
-
-.hero-card__badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(15, 23, 42, 0.85);
-  border: 1px solid rgba(148, 163, 184, 0.7);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-}
 
 /* Grids general */
 .grid {

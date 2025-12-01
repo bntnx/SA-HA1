@@ -4,10 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MujerGlobal | De tu tienda local al mundo</title>
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-
-
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <!-- Toast de confirmación -->
   <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true">
@@ -24,6 +23,7 @@
           <span class="logo__subtitle">Exporta sin miedo</span>
         </span>
       </a>
+
 
       <button 
         class="nav-toggle" 
@@ -49,6 +49,7 @@
   </header>
 
   <main>
+
    <!-- HERO / JUAN MANUEL BENITEZ QUIROZ -->
   <section class="hero" aria-labelledby="hero-title">
     <div class="container hero__content">
@@ -103,22 +104,44 @@
           </p>
         </div>
 
-        <div class="hero__visual" aria-hidden="true">
-          <div class="hero-card">
-            <h2>Tu vitrina global</h2>
-            <p>
-              Centraliza pagos, logística y visibilidad internacional en un solo lugar.
-            </p>
-            <ul class="hero-card__list">
-              <li>✔ Soporte aduanero paso a paso</li>
-              <li>✔ Pagos internacionales seguros</li>
-              <li>✔ Estrategias digitales list-as-you-go</li>
-            </ul>
-            <div class="hero-card__badge">Beta LATAM · 2025</div>
-          </div>
+  
+  <!-- HERO / JUAN MANUEL BENITEZ QUIROZ - OK -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero__content">
+      <div class="hero__text">
+        <h1 id="hero-title">Exportify: tu primera guía para exportar sin complicaciones.</h1>
+        <p class="hero__subtitle">
+          Una plataforma educativa diseñada para mujeres microemprendedoras que quieren aprender 
+          desde cero cómo exportar: logística, aduanas, certificaciones y todo lo necesario 
+          para llevar sus productos al exterior.
+        </p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary">Quiero aprender a exportar</a>
+          <a href="#servicios" class="btn btn--ghost">Ver cómo funciona</a>
+        </div>
+        <p class="hero__note">
+          Pensado para mujeres de Latinoamérica que quieren convertir su emprendimiento en una marca global.
+        </p>
+      </div>
+
+
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero-card">
+          <h2>Aprende a exportar paso a paso</h2>
+          <p>
+            Formación clara y práctica para entender procesos, requisitos y estrategias de exportación.
+          </p>
+          <ul class="hero-card__list">
+            <li>✔ Introducción a logística y aduanas</li>
+            <li>✔ Certificaciones y documentos esenciales</li>
+            <li>✔ Guías prácticas para exportar tus productos</li>
+          </ul>
+          <div class="hero-card__badge">Exportify · 2025</div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
     <!-- CATÁLOGO / SERVICIOS -->
@@ -405,7 +428,55 @@
       </div>
     </section>
 
-   
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section--highlight">
+      <div class="container contact">
+        <div class="contact__text">
+          <h2>¿Lista para explorar tus primeros mercados internacionales?</h2>
+          <p>
+            Déjanos tus datos y te contactaremos para una sesión de diagnóstico gratuita 
+            donde revisaremos el potencial exportador de tu emprendimiento.
+          </p>
+          <ul class="contact__points">
+            <li>Revisión de producto y mercado objetivo.</li>
+            <li>Mapa de pasos para tu primera exportación.</li>
+            <li>Recomendaciones de capacitación y aliados clave.</li>
+          </ul>
+        </div>
+
+        <div class="contact__form-wrapper">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre y apellido</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ej: María López" />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required placeholder="Ej: maria@tuproyecto.com" />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Nombre de tu emprendimiento</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Ej: Raíces Andinas" />
+            </div>
+            <div class="form-group">
+              <label for="pais">País donde operas</label>
+              <input type="text" id="pais" name="pais" placeholder="Ej: Chile, Perú, México..." />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">¿Qué te gustaría lograr con MujerGlobal?</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos brevemente tus objetivos"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Enviar y agendar diagnóstico
+            </button>
+            <p class="form__note">
+              Este formulario es solo de demostración. No se enviarán datos reales.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer__inner">
@@ -437,6 +508,7 @@
       <p>&copy; <span id="year"></span> MujerGlobal. Todos los derechos reservados.</p>
     </div>
   </footer>
-<script src="./assets/js/main.js" defer></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
