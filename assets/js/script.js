@@ -64,3 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+fetch("/pages/footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.querySelector("footer").innerHTML = data;
+  });
