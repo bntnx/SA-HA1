@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MujerGlobal | De tu tienda local al mundo</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+
+</head>
+<body>
+  <!-- Toast de confirmación -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+    <p>¡Gracias por escribirnos! Te contactaremos pronto. 💜</p>
+    <button class="toast__close" aria-label="Cerrar notificación">&times;</button>
+  </div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">🌍</span>
+        <span class="logo__text">
+          <span class="logo__title">MujerGlobal</span>
+          <span class="logo__subtitle">Exporta sin miedo</span>
+        </span>
+      </a>
+
+      <button 
+        class="nav-toggle" 
+        id="nav-toggle" 
+        aria-label="Abrir menú de navegación"
+        aria-controls="main-nav" 
+        aria-expanded="false">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav__list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#sobre">Sobre el proyecto</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto" class="nav__cta">Agenda una llamada</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <h1 id="hero-title">De tu barrio al mundo: exporta con confianza.</h1>
+          <p class="hero__subtitle">
+            MujerGlobal te acompaña en todo el viaje: desde entender aduanas y logística 
+            hasta cobrar en dólares o euros, sin perderte en la burocracia.
+          </p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary">Quiero expandir mi negocio</a>
+            <a href="#servicios" class="btn btn--ghost">Ver cómo funciona</a>
+          </div>
+          <p class="hero__note">
+            Pensado para mujeres emprendedoras de Latinoamérica con productos listos para conquistar EE. UU., UE y más.
+          </p>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero-card">
+            <h2>Tu vitrina global</h2>
+            <p>
+              Centraliza pagos, logística y visibilidad internacional en un solo lugar.
+            </p>
+            <ul class="hero-card__list">
+              <li>✔ Soporte aduanero paso a paso</li>
+              <li>✔ Pagos internacionales seguros</li>
+              <li>✔ Estrategias digitales list-as-you-go</li>
+            </ul>
+            <div class="hero-card__badge">Beta LATAM · 2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO / SERVICIOS -->
+    <section id="servicios" class="section section--light">
+      <div class="container">
+        <header class="section__header">
+          <h2>Lo que hacemos por tu negocio</h2>
+          <p>
+            Un ecosistema diseñado para que tu pyme deje de vender solo en redes locales y empiece a facturar en mercados globales.
+          </p>
+        </header>
+
+        <div class="grid grid--cards">
+          <!-- Card 1 -->
+          <article class="card service-card">
+            <img src="https://via.placeholder.com/480x320?text=E-commerce+Global" 
+                 alt="Emprendedora revisando su tienda online con clientes internacionales" 
+                 class="card__image" />
+            <div class="card__body">
+              <h3>Plataforma de e-commerce internacional</h3>
+              <p>
+                Crea tu vitrina global en minutos: productos en varios idiomas, monedas y con cálculo automático de envíos.
+              </p>
+              <ul class="card__list">
+                <li>Traducciones clave</li>
+                <li>Moneda local + USD/EUR</li>
+                <li>Optimizada para mobile</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card service-card">
+            <img src="https://via.placeholder.com/480x320?text=Log%C3%ADstica+y+aduanas" 
+                 alt="Mapa con rutas de envío internacional y cajas listas para exportar" 
+                 class="card__image" />
+            <div class="card__body">
+              <h3>Soporte aduanero y logística</h3>
+              <p>
+                Te ayudamos con la documentación, clasificación arancelaria y elección de operadores logísticos.
+              </p>
+              <ul class="card__list">
+                <li>Checklists exportación</li>
+                <li>Aliados logísticos validados</li>
+                <li>Seguimiento de envíos</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card service-card">
+            <img src="https://via.placeholder.com/480x320?text=Pagos+seguros" 
+                 alt="Ilustración de pagos digitales seguros entre países" 
+                 class="card__image" />
+            <div class="card__body">
+              <h3>Pagos internacionales sin dolor de cabeza</h3>
+              <p>
+                Integración con pasarelas internacionales, conversión de moneda transparente y protección antifraude.
+              </p>
+              <ul class="card__list">
+                <li>Pagos con tarjeta y wallet</li>
+                <li>Informes de comisiones claros</li>
+                <li>Protección de datos</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card service-card">
+            <img src="https://via.placeholder.com/480x320?text=Capacitaci%C3%B3n" 
+                 alt="Grupo de mujeres emprendedoras en una capacitación online" 
+                 class="card__image" />
+            <div class="card__body">
+              <h3>Academia MujerGlobal</h3>
+              <p>
+                Microcursos sobre marketing digital, validación de mercados y storytelling para vender fuera de tu país.
+              </p>
+              <ul class="card__list">
+                <li>Talleres en vivo y on-demand</li>
+                <li>Mentoras regionales</li>
+                <li>Plantillas descargables</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card service-card">
+            <img src="https://via.placeholder.com/480x320?text=Comunidad" 
+                 alt="Red de emprendedoras conectadas en diferentes países" 
+                 class="card__image" />
+            <div class="card__body">
+              <h3>Comunidad y mentoring</h3>
+              <p>
+                Conecta con otras fundadoras, comparte experiencias y accede a oportunidades de financiamiento y alianzas.
+              </p>
+              <ul class="card__list">
+                <li>Foros temáticos</li>
+                <li>Sesiones 1:1</li>
+                <li>Match con aliadas estratégicas</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card service-card">
+            <img src="https://via.placeholder.com/480x320?text=Datos+y+estrategia" 
+                 alt="Tablero con indicadores de ventas internacionales" 
+                 class="card__image" />
+            <div class="card__body">
+              <h3>Datos y estrategia</h3>
+              <p>
+                Insights sobre qué productos funcionan mejor en cada mercado y recomendaciones accionables para escalar.
+              </p>
+              <ul class="card__list">
+                <li>Panel de métricas esenciales</li>
+                <li>Reportes por país</li>
+                <li>Alertas de oportunidad</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre" class="section">
+      <div class="container about">
+        <div class="about__text">
+          <h2>Sobre MujerGlobal</h2>
+          <p>
+            MujerGlobal nace para cerrar la brecha entre el potencial exportador de miles de mujeres 
+            emprendedoras en América Latina y las oportunidades reales en mercados internacionales.
+          </p>
+          <p>
+            Sabemos que las barreras no son solo técnicas: también son de lenguaje, tiempo, datos móviles 
+            limitados y falta de acompañamiento. Por eso diseñamos una plataforma con interfaz amigable 
+            y procesos guiados, pensando en tu realidad y la de tu negocio.
+          </p>
+          <div class="about__mv">
+            <div>
+              <h3>Misión</h3>
+              <p>
+                Empoderar a mujeres emprendedoras para que exporten con éxito, 
+                ofreciendo una plataforma integral de e-commerce internacional, 
+                capacitación y soporte operativo.
+              </p>
+            </div>
+            <div>
+              <h3>Visión</h3>
+              <p>
+                Ser la comunidad y plataforma líder para la internacionalización de 
+                emprendimientos liderados por mujeres en América Latina, 
+                con impacto económico y social en sus comunidades.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="about__values" aria-label="Valores de MujerGlobal">
+          <h3>Nuestros valores</h3>
+          <ul>
+            <li><strong>Empoderamiento:</strong> herramientas y conocimiento al servicio de las emprendedoras.</li>
+            <li><strong>Accesibilidad:</strong> lenguaje claro y procesos simples.</li>
+            <li><strong>Transparencia:</strong> comisiones, tiempos y procesos sin letra chica.</li>
+            <li><strong>Confianza y seguridad:</strong> pagos protegidos y resguardo de datos.</li>
+            <li><strong>Colaboración:</strong> network de mentoras y aliados estratégicos.</li>
+            <li><strong>Impacto social:</strong> foco en inclusión y desarrollo local sostenible.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="section section--highlight">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <h2>¿Por qué elegir MujerGlobal?</h2>
+          <p>Diseñado para la realidad de las mypes y pymes lideradas por mujeres en Latinoamérica.</p>
+        </header>
+
+        <div class="grid grid--benefits">
+          <article class="benefit">
+            <h3>De local a global sin perder tu esencia</h3>
+            <p>
+              Te ayudamos a adaptar tu propuesta de valor a otros mercados sin sacrificar tu identidad, cultura ni propósito.
+            </p>
+          </article>
+          <article class="benefit">
+            <h3>Acompañamiento, no solo software</h3>
+            <p>
+              No es solo una plataforma: es un equipo y una comunidad que responden a tus dudas y te acompañan en el camino.
+            </p>
+          </article>
+          <article class="benefit">
+            <h3>Pensado para conectividad limitada</h3>
+            <p>
+              Contenido liviano, información descargable y flujos diseñados para funcionar incluso con datos móviles restringidos.
+            </p>
+          </article>
+          <article class="benefit">
+            <h3>Todo en un solo lugar</h3>
+            <p>
+              Pagos, logística, documentación y capacitación centralizados, para que no pierdas horas saltando entre plataformas.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA / SLIDER SIMPLE -->
+    <section class="section section--light" aria-label="Galería de emprendedoras y sus productos">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <h2>Historias que cruzan fronteras</h2>
+          <p>Artesanía, moda, alimentos y tecnología creativa viajando desde Latinoamérica al mundo.</p>
+        </header>
+
+        <div class="gallery">
+          <div class="gallery__track">
+            <figure class="gallery__item">
+              <img src="https://via.placeholder.com/360x240?text=Artesan%C3%ADa" 
+                   alt="Productos artesanales listos para ser empacados y enviados al exterior" />
+              <figcaption>Artesanía con sello local enviándose a clientes en Europa.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img src="https://via.placeholder.com/360x240?text=Moda+sostenible" 
+                   alt="Emprendedora de moda sosteniendo prendas sostenibles" />
+              <figcaption>Moda sostenible que encuentra nuevas audiencias en Norteamérica.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img src="https://via.placeholder.com/360x240?text=Alimentos+procesados" 
+                   alt="Frascos de alimentos procesados etiquetados para exportación" />
+              <figcaption>Alimentos procesados listos para cumplir estándares internacionales.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img src="https://via.placeholder.com/360x240?text=Tech+creativa" 
+                   alt="Equipo tecnológico creativo en un escritorio de trabajo" />
+              <figcaption>Tecnología creativa que cruza fronteras digitales.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="section">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <h2>Lo que dicen nuestras emprendedoras</h2>
+          <p>Testimonios simulados de mujeres que ya dieron el salto internacional.</p>
+        </header>
+
+        <div class="grid grid--testimonials">
+          <article class="testimonial">
+            <p class="testimonial__quote">
+              “Antes vendía solo por Instagram en mi país. Con MujerGlobal, mi línea de cosmética natural llegó a clientas en tres países 
+              y entendí realmente cómo funciona la exportación.”
+            </p>
+            <p class="testimonial__author">
+              <strong>Ana María</strong> · Cosmética natural · Chile → EE. UU.
+            </p>
+          </article>
+
+          <article class="testimonial">
+            <p class="testimonial__quote">
+              “El mayor miedo eran las aduanas y la logística. Ahora tengo checklists claros y aliados logísticos 
+              recomendados. Puedo concentrarme en diseñar y no en papeleo.”
+            </p>
+            <p class="testimonial__author">
+              <strong>Carolina</strong> · Diseño de autor · Colombia → Europa
+            </p>
+          </article>
+
+          <article class="testimonial">
+            <p class="testimonial__quote">
+              “No tenía tarjeta de crédito empresarial ni sabía cómo cobrar en dólares. La solución de pagos de MujerGlobal 
+              me permitió formalizar mis ventas internacionales.”
+            </p>
+            <p class="testimonial__author">
+              <strong>Lucía</strong> · Alimentos procesados · Perú → Región
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+   
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__icon">🌍</span>
+        <span class="logo__title">MujerGlobal</span>
+        <p>De tu tienda local al mundo.</p>
+      </div>
+
+      <nav aria-label="Enlaces de footer">
+        <ul class="footer__links">
+          <li><a href="#sobre">Sobre el proyecto</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__social">
+        <p>Síguenos</p>
+        <ul class="social-list">
+          <li><a href="#" aria-label="Instagram">IG</a></li>
+          <li><a href="#" aria-label="LinkedIn">IN</a></li>
+          <li><a href="#" aria-label="YouTube">YT</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> MujerGlobal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+<script src="./assets/js/main.js" defer></script>
+</body>
+</html>
