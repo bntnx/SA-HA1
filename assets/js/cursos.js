@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
             progresoTotal: 40,
             temas: [
                 { nombre: "Diseño de Marca Global", avance: 100 },
-                { nombre: "Empaques Sostenibles", avance: 20 },
-                { nombre: "Etiquetado Internacional", avance: 0 }
+                { nombre: "Empaques Sostenibles", avance: 30 },
+                { nombre: "Etiquetado Internacional", avance: 40 }
             ]
         },
         {
@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
             progresoTotal: 10,
             temas: [
                 { nombre: "Estrategia en Redes", avance: 30 },
-                { nombre: "E-commerce B2B", avance: 0 },
-                { nombre: "Publicidad Segmentada", avance: 0 }
+                { nombre: "E-commerce B2B", avance: 25 },
+                { nombre: "Publicidad Segmentada", avance: 30 }
             ]
         },
         // Puedes agregar más cursos aquí...
@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
             titulo: "Logística y Envíos",
             img: "../assets/img/catalogo/logistica.jpg",
             descripcion: "Aprende los pasos esenciales, documentación y tratados para llevar tus productos al extranjero sin errores.",
-            progresoTotal: 0,
+            progresoTotal: 60,
             temas: [
-                { nombre: "Tipos de transporte", avance: 0 },
-                { nombre: "Incoterms 2024", avance: 0 }
+                { nombre: "Tipos de transporte", avance: 70 },
+                { nombre: "Incoterms 2024", avance: 50 }
             ]
         }
     ];

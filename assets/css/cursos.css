@@ -1,15 +1,12 @@
-:root {
-    --bg-cream: #FDFBF0;
-    --card-purple-light: #D4A5D9; /* El lila de fondo de las cards */
-    --card-purple-dark: #6D4C73;   /* El morado oscuro de los botones/barras */
-    --text-color: #ffffff;
-    --pill-bg: #ffffff;
-    --pill-text: #000000;
-}
+/* --- CURSOS.CSS - MODO OSCURO (MATCH CON INDEX) --- */
 
+/* 1. Fondo y Texto Base */
 body.page-cursos {
-    background-color: var(--bg-cream);
-    font-family: 'Segoe UI', sans-serif;
+    /* Mismo fondo radial oscuro del Index */
+    background: radial-gradient(circle at top, #1f2937 0, #020617 45%, #020617 100%);
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #f9fafb; /* Texto blanco */
+    min-height: 100vh;
 }
 
 .main-content {
@@ -17,9 +14,10 @@ body.page-cursos {
     min-height: 80vh;
 }
 
+/* 2. Títulos */
 h1 {
-    color: var(--card-purple-light); /* Un lila oscuro para el título o blanco con sombra */
-    text-shadow: 1px 1px 2px #6D4C73;
+    color: #ec4899; /* Rosa Neón */
+    text-shadow: 0 0 20px rgba(236, 72, 153, 0.4); /* Resplandor */
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -31,17 +29,22 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Tarjeta individual (Sketch 1) */
+/* 3. TARJETA INDIVIDUAL (Estilo Glassmorphism) */
 .course-card {
-    background-color: var(--card-purple-light);
+    /* Fondo oscuro semitransparente */
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.8));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(236, 72, 153, 0.2); /* Borde sutil rosa */
+    
     border-radius: 20px;
     padding: 1.5rem;
     text-align: center;
-    border: 2px solid #5A3660;
-    box-shadow: 0 6px 0 rgba(0,0,0,0.15);
-    transition: transform 0.2s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,106 +52,115 @@ h1 {
 
 .course-card:hover {
     transform: translateY(-5px);
+    border-color: rgba(236, 72, 153, 0.6); /* Brilla más al pasar el mouse */
+    box-shadow: 0 15px 40px rgba(236, 72, 153, 0.15);
 }
 
+/* Imagen del curso */
 .course-img-box {
     width: 100%;
     height: 180px;
-    background: #fff;
+    background: #0f172a;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 1rem;
-    border: 1px solid #5A3660;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .course-img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
+.course-card:hover .course-img-box img {
+    transform: scale(1.05); /* Zoom suave al hacer hover */
+}
+
+/* Textos de la tarjeta */
 .course-title {
-    color: white;
+    color: #f3f4f6; /* Blanco brillante */
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
 }
 
 .course-desc {
-    color: white;             /* Texto blanco */
-    font-size: 0.95rem;       /* Tamaño legible */
-    line-height: 1.4;         /* Espaciado entre líneas */
-    margin-bottom: 1.5rem;    /* Espacio antes del botón */
-    min-height: 3em;          /* Altura mínima para que las tarjetas queden parejas */
-    
-    /* Opcional: Sombra suave si el lila es muy claro, para leer mejor */
-    text-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+    color: #9ca3af; /* Gris azulado (Muted) */
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    min-height: 3em;
+    text-shadow: none;
 }
 
+/* Pill (Etiquetas pequeñas si las usas) */
 .pill {
-    background-color: var(--pill-bg);
-    color: var(--pill-text);
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    border: 1px solid #ccc;
+    background-color: rgba(99, 102, 241, 0.2); /* Fondo morado transparente */
+    color: #a5b4fc; /* Texto lila claro */
+    border: 1px solid rgba(99, 102, 241, 0.5);
 }
 
-/* Botón Grande "BTN INFO" */
+/* 4. BOTÓN "BTN INFO" */
 .btn-info {
-    background-color: var(--card-purple-dark);
-    color: white;
-    padding: 12px 40px;
+    /* Estilo "Ghost" (Transparente con borde) para no saturar */
+    background: transparent;
+    border: 2px solid #ec4899;
+    color: #ec4899;
+    padding: 10px 40px;
     border-radius: 30px;
-    border: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: background 0.2s;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .btn-info:hover {
-    background-color: #523755;
+    background: #ec4899; /* Se llena de rosa al pasar el mouse */
+    color: white;
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.6); /* Efecto neón */
 }
 
-/* --- MODAL DE DETALLE (Sketch 2) --- */
+/* --- 5. MODAL DE DETALLE --- */
 .modal-overlay {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(90, 54, 96, 0.9); /* Fondo morado translúcido */
+    background: rgba(2, 6, 23, 0.9); /* Fondo negro casi total */
+    backdrop-filter: blur(5px);
     display: none;
     justify-content: center;
     align-items: center;
     z-index: 2000;
 }
 
-/* El contenedor rosa grande del Sketch 2 */
 .course-modal-content {
-    background-color: var(--card-purple-light);
+    background-color: #0f172a; /* Azul noche sólido */
     width: 90%;
     max-width: 900px;
     border-radius: 25px;
-    border: 3px solid #5A3660;
+    border: 1px solid #6366f1; /* Borde Morado */
     padding: 2rem;
     position: relative;
     max-height: 90vh;
     overflow-y: auto;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    color: white;
 }
 
 .modal-close {
     position: absolute;
-    top: 10px; right: 20px;
-    font-size: 2rem;
+    top: 15px; right: 25px;
+    font-size: 2.5rem;
     cursor: pointer;
-    color: white;
-    font-weight: bold;
+    color: #9ca3af;
+    transition: color 0.2s;
+    line-height: 0.8;
 }
+.modal-close:hover { color: #ec4899; }
 
-/* Layout interno del Modal */
+/* Layout interno Modal */
 .modal-top-row {
     display: flex;
     flex-wrap: wrap;
@@ -163,8 +175,9 @@ h1 {
 
 .modal-img-container img {
     width: 100%;
-    border-radius: 10px;
-    border: 2px solid #5A3660;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .modal-info-container {
@@ -175,52 +188,69 @@ h1 {
 }
 
 .modal-title {
-    color: white;
+    color: #ec4899; /* Título rosa */
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(236, 72, 153, 0.3);
 }
 
-/* Barras de Progreso */
+/* Barras de Progreso (Neon Style) */
 .progress-container {
-    background-color: var(--bg-cream);
+    background-color: #1e293b; /* Fondo de la barra gris oscuro */
     border-radius: 20px;
     overflow: hidden;
-    height: 35px;
+    height: 30px; /* Un poco más finas */
     display: flex;
     align-items: center;
     position: relative;
     margin-bottom: 1rem;
-    border: 1px solid #5A3660;
+    border: 1px solid #334155;
 }
 
 .progress-bar {
-    background-color: var(--card-purple-dark);
+    /* Gradiente de Rosa a Morado */
+    background: linear-gradient(90deg, #ec4899, #6366f1);
     height: 100%;
     display: flex;
     align-items: center;
     padding-left: 15px;
     color: white;
     font-weight: bold;
-    font-size: 1rem;
-    border-radius: 0 20px 20px 0; /* Efecto redondeado a la derecha */
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.4); /* Resplandor */
 }
 
 .progress-text {
     position: absolute;
     right: 15px;
-    color: var(--card-purple-dark);
+    color: #f3f4f6;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .modal-topics h3 {
-    color: white;
+    color: #6366f1; /* Subtítulos morados */
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.3);
+    padding-bottom: 0.5rem;
+    display: inline-block;
 }
 
 .topic-item {
     margin-bottom: 1rem;
+}
+
+/* Responsive del Modal */
+@media (max-width: 768px) {
+    .modal-top-row {
+        flex-direction: column;
+    }
+    .modal-img-container {
+        max-width: 100%;
+    }
 }
