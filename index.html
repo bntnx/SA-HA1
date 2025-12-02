@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MujerGlobal | De tu tienda local al mundo</title>
   <link rel="stylesheet" href="./assets/css/styles.css" />
-
+  <link rel="stylesheet" href="./assets/css/navbar-fix.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
 
 </head>
 <body>
@@ -15,38 +16,7 @@
     <button class="toast__close" aria-label="Cerrar notificación">&times;</button>
   </div>
 
-  <header class="site-header">
-    <div class="container header__inner">
-      <a href="#" class="logo">
-        <span class="logo__icon">🌍</span>
-        <span class="logo__text">
-          <span class="logo__title">MujerGlobal</span>
-          <span class="logo__subtitle">Exporta sin miedo</span>
-        </span>
-      </a>
-
-      <button 
-        class="nav-toggle" 
-        id="nav-toggle" 
-        aria-label="Abrir menú de navegación"
-        aria-controls="main-nav" 
-        aria-expanded="false">
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-      </button>
-
-      <nav class="main-nav" id="main-nav">
-        <ul class="nav__list">
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#sobre">Sobre el proyecto</a></li>
-          <li><a href="#beneficios">Beneficios</a></li>
-          <li><a href="#testimonios">Testimonios</a></li>
-          <li><a href="#contacto" class="nav__cta">Agenda una llamada</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="navbar-container"></div>
 
   <main>
     <!-- HERO -->
@@ -370,36 +340,9 @@
 
    
 
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="logo__icon">🌍</span>
-        <span class="logo__title">MujerGlobal</span>
-        <p>De tu tienda local al mundo.</p>
-      </div>
-
-      <nav aria-label="Enlaces de footer">
-        <ul class="footer__links">
-          <li><a href="#sobre">Sobre el proyecto</a></li>
-          <li><a href="#beneficios">Beneficios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer__social">
-        <p>Síguenos</p>
-        <ul class="social-list">
-          <li><a href="#" aria-label="Instagram">IG</a></li>
-          <li><a href="#" aria-label="LinkedIn">IN</a></li>
-          <li><a href="#" aria-label="YouTube">YT</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer__bottom">
-      <p>&copy; <span id="year"></span> MujerGlobal. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+  <div id="footer-container"></div>
 <script src="./assets/js/main.js" defer></script>
+<script src="./assets/js/navbar.js"></script>
+<script src="./assets/js/footer.js"></script>
 </body>
 </html>

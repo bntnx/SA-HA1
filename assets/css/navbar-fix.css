@@ -1,0 +1,64 @@
+/* --- ARREGLO DEFINITIVO DEL NAVBAR --- */
+
+/* 1. Fijamos el contenedor principal que tú creaste */
+#navbar-container {
+    position: fixed !important; /* Fuerza bruta para que no se mueva */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Por encima de todo */
+    background: transparent; /* Dejamos que el header interno ponga el color */
+}
+
+/* 2. Empujamos el cuerpo para que el contenido no quede escondido detrás del menú */
+body {
+    padding-top: 85px !important; 
+}
+
+/* 3. Ajuste visual para que coincida con el modo oscuro */
+/* Forzamos al header interno a tener el fondo correcto si styles.css falla */
+.site-header {
+    background: rgba(3, 7, 18, 0.95) !important; /* Fondo oscuro casi negro */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(236, 72, 153, 0.3) !important; /* Borde rosa sutil */
+    width: 100%;
+}
+
+/* 4. Corrección para el Menú Móvil (para que no se vea aplastado) */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex !important;
+        z-index: 10001; /* Botón encima del menú */
+    }
+
+    /* Sobre-escribimos el estilo 'is-open' de tus compañeros para móviles */
+    .main-nav {
+        position: fixed !important;
+        inset: 0 !important; /* Ocupa toda la pantalla */
+        height: 100vh;
+        background: #0f172a !important; /* Fondo sólido oscuro */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+        
+        /* Animación */
+        transform: translateX(100%); /* Oculto a la derecha */
+        transition: transform 0.3s ease-in-out;
+        
+        /* Anulamos estilos raros del original */
+        opacity: 1 !important; 
+        scale: 1 !important; 
+    }
+
+    /* Cuando JS pone la clase .is-open (que arreglamos arriba) */
+    .main-nav.is-open {
+        transform: translateX(0) !important; /* Se desliza a la vista */
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.2rem;
+    }
+}
